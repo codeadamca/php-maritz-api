@@ -27,14 +27,12 @@ echo 'Event ID: '.$event_id.'
     <br>
     Company: '.$company;
 
-$badge_id = 0;
-
 $api_url = 'https://developer.experientswap.com/APIv1/LeadInfo'.
     '?apikey='.MARITZ_API_KEY.
     '&actcode='.MARITZ_ACTIVATION_CODE.
     '&badgeid=0'.
     '&connectkey='.$badge_id.
-    '&lastinitial='.$first_name[0];
+    '&lastinitial='.$last_name[0];
 
 echo 'URL: '.$api_url;
 
